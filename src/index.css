@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: Arial;
+  color: #423838;
+}
+
+textarea {
+  width: 70%;
+  height: 410px;
+  border: 1px solid #444;
+}
