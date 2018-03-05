@@ -26,13 +26,12 @@ class App extends Component {
         </div>
 
         <h2>Can you help the professor create the vocabulary list for text B?</h2>
-        <textarea defaultValue={getVocabulary(textB)} />
+        <textarea defaultValue={getVocabulary(textB).join(' ')} />
 
         <h2>How many distinct pretty numbers are there in Text B?</h2>
         <div className="card">
           <p>In Text B, there are {getNumbers(textB).length} distinct(!) pretty numbers.</p>
         </div>
-
       </div>
     );
   }

@@ -17,7 +17,7 @@ describe('getPrepositions', () => {
     expect(prepositions.length).toEqual(49);
   });
 
-  it ('get 3 randon prepositions', () => {
+  it ('get 3 random prepositions', () => {
     const textRandom = 'pwz fdrbn nxprpq crpmz grlqvpr pzxvb jfcv wvbnq xwkxr ggvfqgl ';
     const prepositions = getPrepositions(textRandom);
 
@@ -82,10 +82,18 @@ describe('getPrettyNumbers', () => {
     expect(prettyNumbers.length).toEqual(4);
   });
 
-  it('get Booglan word vqxtz', () => {
+  it('get number Booglan word vqxtz', () => {
     const textRandom = 'vqxtz';
     const prettyNumbers = getNumbers(textRandom);
 
     expect(prettyNumbers).toEqual([484287]);
   });
+
+  it('get 2 equal numbers', () => {
+    const textRandom = 'vqxtz vqxtz';
+    const prettyNumbers = getNumbers(textRandom);
+
+    expect(prettyNumbers).toEqual([484287]);
+  });
+
 });
